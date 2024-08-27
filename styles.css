@@ -1,0 +1,57 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+header{
+    display: flex;
+    justify-content:space-between;
+    
+    flex-direction: row;
+}
+
+.menu{   
+    text-align: left;
+    padding-top: 30px;
+    padding-left: 30px;
+    
+}
+
+ul{
+    list-style-type: none;
+}
+
+
+
+.img_fundo{
+    position: relative;
+    opacity: 10%;
+}
+
+.img_sobreposicao{
+    position: absolute;
+    padding-left: 1320px;
+    padding-top: 30px;
+   
+    
+}
+
+.texto_titulo{
+    position: absolute;
+    margin-left: 110px;
+    margin-top: 30px;
+    text-align: center;
+    width: 80%;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+
+
+
