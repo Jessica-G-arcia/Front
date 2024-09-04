@@ -1,0 +1,69 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+body{
+    background-color: black;
+}
+
+h1{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    margin: 10px;
+}
+
+a{
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+img{
+    border-radius: 10px;
+}
+
+p{
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+.secao1{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: blueviolet;
+
+}
+
+.secao2{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: aqua;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.secao3{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: azure;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.seta_voltar_topo img {
+    position: fixed;
+    bottom: 3%;
+    right: 3%;
+}
