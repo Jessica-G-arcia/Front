@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/aula5/styes.css">
+    <title>Form com atributo novalidate</title>
+</head>
+<body>
+    <div class="form">
+        <form action="/processar" method="post">
+            <label>Nome: <input name="nome" placeholder="Precisa explicar?" required></label><br><br>
+            <label>E-mail: <input name="email" placeholder="Nada de teste@teste" required></label><br><br>
+            <label>Mensagem: <textarea name="mensagem" placeholder="Deixe aqui a bobagem" required></textarea></label><br><br>
+            <input type="submit" name="action" value="Salvar rascunho" formnovalidate>
+            <input type="submit" name="action" value="Enviar">
+        </form>
+    </div>
+    
+    <div class="detalhes">
+        <details>
+            <summary> Copiando <progress max="39248" value="14718">37,5%</progress>
+            </summary>
+                <dl>
+                    <dt>Tamanho total:</dt>
+                    <dd>39.248KB</dd>
+                    <dt>Transferido:</dt>
+                    <dd>14.718KB</dd>
+                    <dt>Taxa de transferência:</dt>
+                    <dd>127KB/s</dd>
+                    <dt>Nome do arquivo:</dt>
+                    <dd>HTML 5.mp4</dd>
+                 </dl>
+        </details>
+    </div>
+    <br>
+    <br>
+
+    <div contenteditable="true">
+        Edite-me...
+    </div>
+</body>
+</html>
