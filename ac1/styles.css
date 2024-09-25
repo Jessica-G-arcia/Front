@@ -1,0 +1,20 @@
+body{
+    margin: 30px;
+}
+
+table{
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+td{
+    border: 1px solid black;
+}
+
+.estoque, .valor{
+    text-align: center;
+}
+
+.tachado{
+    text-decoration: line-through;
+}
