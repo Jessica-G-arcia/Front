@@ -1,0 +1,70 @@
+
+body, html{
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+.menu_lateral{
+    background-color: black;
+    width: 20%;
+    height: 100%;
+    padding-top: 10px;
+    float: left;
+    border: 1px solid greenyellow;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+}
+
+.menu_lateral li a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu_lateral li{
+    text-decoration: none;
+    color: white;
+    font-weight: 100;
+    list-style-type: none;
+}
+
+.menu_lateral li a:hover{
+    text-decoration: none;
+    color: greenyellow;
+    text-shadow: 1px 2px 2px #ccc;
+}
+
+.oswald_fonte{
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.conteudo_principal{
+    width: 79%;
+    height: 100%;
+    background-color: aliceblue;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    float: right;
+    padding-left: 10px;
+    top: 0;
+    bottom: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteudo_principal h1, .conteudo_principal p {
+    text-align: center;
+}
+
+
+
+
+
+
+
