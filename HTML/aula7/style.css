@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+body, html{
+   
+}
+
+body, ul{
+    margin: 0;
+    padding: 0;
+}
+
+#menu a{
+    color: black;
+    text-decoration: none;
+    font-family: "Abel", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    transition: 0.3s;
+    padding: 0 0.4em;
+    font-size: 24px;
+    border-radius: 15px;
+    /* border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px ; */
+    border-bottom: 2px solid rgb(228, 158, 46);
+    /* box-shadow: 1px 1px 2px; */
+}
+
+#menu a:hover {
+    font-size: 22px;
+    border-radius: 15px;
+    /* border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px; */
+    border-bottom: 0.1px solid rgb(231, 141, 14);
+}
+
+#menu li {
+    background-color: transparent;
+    border-radius: 15px;
+    /* border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px; */
+}
+
+#logo img{
+    width: 40%;
+    mix-blend-mode: multiply;
+}
+
+#logo img:hover {
+    
+    transition: 0.3s;
+}
+
+header{
+    box-sizing: border-box;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: rgba(255, 255, 0, 0.582);
+    box-shadow: 3px 3px 6px #b1b1b1;  
+}
+
+#menu {
+    display: flex;
+    list-style-type: none;
+    gap: 0.8rem;
+}
+
+#btn_mobile {
+    display: none;
+}
+
+
