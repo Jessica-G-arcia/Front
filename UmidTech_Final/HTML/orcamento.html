@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/favicon/favicon3.png" type="image/x-icon">
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <script src="../JS/script.js"></script>
+    <title>Orçamento</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="../HTML/index.html"><img src="../img/UT_logo_1-removebg-preview (2).png" width="40%" alt="logo da empresa"></a>
+        </div>
+        <div class="hamburguer" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <nav class="menu">
+            <a href="../HTML/index.html">Home</a>
+            <a href="../HTML/sobre_nos.html">Sobre nós</a>
+            <a href="../HTML/produtos.html">Produtos</a>
+            <a href="../HTML/faq.html">FAQ</a>
+            <a href="../HTML/contato.html">Contato</a>
+            <a class="bt_orcamento" href="../HTML/orcamento.html">Solicitar Orçamento</a>
+        </nav>
+    </header>
+    <hr>
+    <div class="orcamento">
+        <h2>Solicite um orçamento gratuito!</h2>
+        <p>Insira seus dados abaixo para receber um orçamento sem compromisso de um dos nossos consultores.</p>
+
+        <form id="formulario" method="post" action="enviar.php">
+            <div class="orcamento-dados-usuario">
+                <div class="nome-email">
+                    <label><b>Nome</b></label>
+                    <input type="text" name="nome" id="nome_orcamento" placeholder="Escreva o seu nome completo" required><br><br>
+                    <label><b>E-mail</b></label>
+                    <input type="email" name="email" id="email_orcamento" placeholder="Insira um e-mail válido" required>
+                </div>
+                <br>
+                <p><b>Quantidade</b></p>
+            </div>  
+            <div class="qtde-info">   
+                
+                <div class="container-orcamento">
+                    <div class="tamanhos">
+                        <label>P</label>
+                        <label>M</label>
+                        <label>G</label>
+                    </div>
+                    <div class="container-qtde">
+                        <div class="seletor-quantidade" id="sizeP">
+                            <div class="input-quantidade">
+                                <button onclick="decrement('sizeP')">-</button>
+                                <input type="text" value="0" required>
+                                <button onclick="increment('sizeP')">+</button>
+                            </div>
+                        </div> 
+              
+                        
+                        <div class="seletor-quantidade" id="sizeM">
+                            <div class="input-quantidade">
+                                <button onclick="decrement('sizeM')">-</button>
+                                <input type="text" value="0" required>
+                                <button onclick="increment('sizeM')">+</button>
+                            </div>
+                        </div>
+                        
+                        <div class="seletor-quantidade" id="sizeG">
+                            <div class="input-quantidade">
+                                <button onclick="decrement('sizeG')">-</button>
+                                <input type="text" value="0" required>
+                                <button onclick="increment('sizeG')">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="orcamento-info-adicionais">
+                    <p><b>Informações Adicionais</b></p> 
+                    <input type="text" name="info-adc" id="info-adc" placeholder="Caso necessário, escreve aqui mais informações sobre o seu orçamento.">
+    
+                </div>
+            </div>
+            <div class="btn-enviar">
+                <button class="botao__1">
+                    <div class="svg-wrapper-1">
+                        <div class="svg-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                <path fill="none" d="M0 0h24v24H0z"></path>
+                                <path fill="currentColor"
+                                    d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+                    <span>Enviar</span>
+                </button>
+            </div>
+          </form>
+    </div>
+    <footer>
+        <div class="footerContainer">
+            <div class="logoFooter">
+                <img src="../img/UT_logo_1-removebg-preview (2).png" alt="logo da página">
+            </div>
+    
+            <div class="colunasFooter">
+                <h3>Início</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="orcamento.html">Solicitar Orçamento</a></li>
+                </ul>
+            </div>
+            <div class="colunasFooter">
+                <h3>Sobre-nós</h3>
+                <ul>
+                    <li><a href="sobre_nos.html">Informações da Empresa</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            <div class="colunasFooter">
+                <h3>Suportes</h3>
+                <ul>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="#">Telefones</a></li>
+                    <li><a href="#">Chat</a></li>
+                </ul>
+            </div>
+            <div class="redesSociaisFooter">
+                <a href="#"><img src="../img/icon_instagram.png" alt="Instagram"></a>
+                <a href="#"><img src="../img/icone-linkedin.png" alt="Linkdedin"></a>
+                <a href="#"><img src="../img/icone_facebbok.png" alt="Facebook"></a>
+                <a href="#"><img src="../img/icone-whatsapp.png" alt="whatsApp"></a>
+                <a href="#"><img src="../img/icone-gmail.png" alt="Gmail"></a>
+            </div>
+            <div class="botaoContatoFooter">
+                <a href="contato.html" class="contatoBotao">Contato</a>
+            </div>
+        </div>
+        <div class="footerFinal">
+            <p>© 2024 Copyright - UmidTech.</p>
+        </div>
+    </footer> 
+</body>
+</html>

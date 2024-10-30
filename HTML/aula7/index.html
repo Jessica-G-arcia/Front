@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../aula7/style.css">
     <link rel="shortcut icon" href="./img/favicon/favicon_sunpet.png" type="image/x-icon">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+
     <title>SunPet</title>
 </head>
 <body>
@@ -26,7 +28,38 @@
 
     </header>
 
-
-    
+    <!-- Início carrossel -->
+    <div class="container-carousel">
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active" data-bs-interval="3000">
+                    <img src="/img/camping1.jpeg" class="d-block w-100" alt="">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="/img/camping2.jpeg" class="d-block w-100" alt="">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="/img/camping3.jpeg" class="d-block w-100" alt="">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="/img/praia.jpeg" class="d-block w-100" alt="">
+                </div>
+            </div>
+            
+            <!-- Controle do carrossel -->
+            <button class="carousel-control-prev" data-bs-target="#carouselExampleInterval" type="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            
+            <button class="carousel-control-next" data-bs-target="#carouselExampleInterval" type="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+            </button>
+        </div>
+    </div> 
+   
+    <!-- Fim do carrossel -->
 </body>
+<script type="text/javascript" src="./bootstrap/js/bootstrap.min.js"></script>
 </html>

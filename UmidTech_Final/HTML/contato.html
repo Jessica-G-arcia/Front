@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/favicon/favicon3.png" type="image/x-icon">
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <script src="../JS/script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <title>Contato</title>
+</head>
+
+<body class="Contato">
+    <header class="header">
+        <div class="logo">
+            <a href="../HTML/index.html"><img src="../img/UT_logo_1-removebg-preview (2).png" width="40%" alt="logo da empresa"></a>
+        </div>
+        <div class="hamburguer" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <nav class="menu">
+            <a href="../HTML/index.html">Home</a>
+            <a href="../HTML/sobre_nos.html">Sobre nós</a>
+            <a href="../HTML/produtos.html">Produtos</a>
+            <a href="../HTML/faq.html">FAQ</a>
+            <a href="../HTML/contato.html">Contato</a>
+            <a class="bt_orcamento" href="../HTML/orcamento.html">Solicitar Orçamento</a>
+        </nav>
+    </header>
+    <hr>
+    <h1 class="Titulo_contato">Contato</h1>
+
+    <div class="Container_contato">
+        <div class="Conteudo_contato">
+            <p>Já deu uma olhada em nossa página de perguntas e respostas?</p>
+            <p>Para acessar basta clicar <a href="faq.html">AQUI</a></p>
+            <p>Ficou com alguma duvida? Será um prazer ajudá-lo!</p>
+            <p>Envie a sua mensagem através do formulário ao lado, lhe responderemos o mais breve possível. Estamos abertos a feedbacks também :)</p>
+            <P>Caso prefira, pode nos contatar através:</P>
+            <p><img src="../img/icone-whatsapp.png" alt="whatsapp" class="Img_redesocial_contato"> (15)123456789</p>
+            <p><img src="../img/icone-gmail.png" alt="E-mail" class="Img_redesocial_contato"> Umidtech_suporte@gmail.com</p>
+        </div>
+
+        <section class="Contato_section">
+            <h2 class="Titulo_msg_contato">Envie-nos a sua mensagem aqui:</h2>
+            <form action="#" method="post" class="Forms_contato">
+            <div class="Contato_input">
+                <label for="nome" class="Label_contato">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" required title ="Preencha este campo com seu Nome Completo.">
+            </div>
+            <div class="Contato_input">
+                <label for="email" class="Label_contato">E-mail:</label>
+                <input type="email" id="email" name="email" required title="Preencha este campo com seu E-mail">
+            </div>
+            <div class="Contato_input">
+                <label for="mensagem" class="Label_contato">Mensagem:</label>
+                <textarea name="mensagem" id="mensagem" rows="4" required title="Preencha este campo com uma Mensagem"></textarea>
+            </div>
+            <div>
+                <button type="submit" class="Botao_enviar">Enviar</button>
+            </div>
+            </form>
+        </section>
+    </div>
+    <footer>
+        <div class="footerContainer">
+            <div class="logoFooter">
+                <img src="../img/UT_logo_1-removebg-preview (2).png" alt="logo da página">
+            </div>
+    
+            <div class="colunasFooter">
+                <h3>Início</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="orcamento.html">Solicitar Orçamento</a></li>
+                </ul>
+            </div>
+            <div class="colunasFooter">
+                <h3>Sobre-nós</h3>
+                <ul>
+                    <li><a href="sobre_nos.html">Informações da Empresa</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            <div class="colunasFooter">
+                <h3>Suportes</h3>
+                <ul>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="#">Telefones</a></li>
+                    <li><a href="#">Chat</a></li>
+                </ul>
+            </div>
+            <div class="redesSociaisFooter">
+                <a href="#"><img src="../img/icon_instagram.png" alt="Instagram"></a>
+                <a href="#"><img src="../img/icone-linkedin.png" alt="Linkdedin"></a>
+                <a href="#"><img src="../img/icone_facebbok.png" alt="Facebook"></a>
+                <a href="#"><img src="../img/icone-whatsapp.png" alt="whatsApp"></a>
+                <a href="#"><img src="../img/icone-gmail.png" alt="Gmail"></a>
+            </div>
+            <div class="botaoContatoFooter">
+                <a href="contato.html" class="contatoBotao">Contato</a>
+            </div>
+        </div>
+        <div class="footerFinal">
+            <p>© 2024 Copyright - UmidTech.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

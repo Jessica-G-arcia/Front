@@ -1,0 +1,973 @@
+/* Estilizar header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 5px;
+    margin: 0px;
+    align-items: center;
+    width: 100%;
+  }
+  
+  /* Estilizar logo no header */
+  .header .logo {
+    padding-left: 20px;
+  }
+  
+  /* Estilizar menu no header */
+  .header .menu {
+    margin-right: 20px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+  }
+  
+  /* Fonte usada na página toda */
+  .inter_fonte {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  /* Estilizar o link do menu */
+  .header .menu a {
+    text-decoration: none;
+    color: #284B63;
+  }
+  
+  /* Estilizar botão solicitar orçamento */
+  .bt_orcamento {
+    border: 1px solid #FFB703;
+    background-color: #FFB703;
+    box-shadow: 0px 0px 15px rgb(193, 93, 27);
+    border-radius: 20px;
+    padding: 5px;
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  /* Estilizar menu hamburguer */
+  .hamburguer {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    margin-right: 20px;
+  }
+  
+  /* Estilizar os três risquinhos do menu hamburguer */
+  .hamburguer div {
+    width: 25px;
+    height: 3px;
+    background-color: rgb(3, 3, 3);
+  }
+  
+  /* Condicionar para que o menu hamburguer apareça apenas em telas menores de 768px */
+  @media (max-width: 768px) {
+    .header .menu {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      background-color: #fff;
+      width: 100%;
+      position: absolute;
+      top: 50px;
+      left: 0;
+      padding-bottom: 10px;
+    }
+    .hamburguer {
+      display: flex;
+    }
+    .menu.active {
+      display: flex;
+    }
+  }
+  
+  /* Linha que divide o header do body */
+  hr {
+    margin: 0;
+  }
+  
+  /* Estilizar body */
+  body {
+    margin: 0;
+    background-color: #284b63;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  /* Estilizar texto Home */
+  .texto_impacto {
+    margin-top: 50px;
+    text-align: center;
+    color: white;
+  }
+  
+  /* Estilizar o h2 da Home */
+  .texto_impacto h2 {
+    font-size: 20px;
+    font-weight: 30;
+  }
+
+  /* Estilizar o texto de informações do produto da Home */
+  .info_produto {
+    position: relative;
+    margin-top: 50px;
+    width: 100%;
+    height: 560px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+  
+  }
+  
+  /* Estilizar imagem do produto na Home */
+  .img_principal {
+    position: relative;
+    width: 30%;
+    border-radius: 30px;
+  
+  }
+  
+  /* Estilizar lista e itens da Home */
+  ul,
+  li {
+    font-weight: 30;
+    list-style-type: none;
+    margin-bottom: 10px;
+  
+  }
+  
+  /* Estilizar div que contém a lista de itens do Produto na Home */
+  .texto_produto {
+    position: relative;
+    border-radius: 0px 30px 30px 0px;
+    text-align: left;
+  }
+  
+  /* Estilizar botão saiba mais da Home */
+  .bt_saiba_mais {
+    border: 1px solid #023047;
+    background-color: #8ECAE6;
+    color: #023047;
+    border-radius: 20px;
+    font-weight: 300;
+    font-size: 15px;
+    text-decoration: none;
+    padding: 5px;
+    margin-left: 40px;
+  
+  }
+  
+  /* Estilizar ondas da Home */
+  .custom-shape-divider-top-1727320708 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+  }
+  
+  /* Estilizar ondas da Home */
+  .custom-shape-divider-top-1727320708 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 30px;
+  }
+  
+  /* Estilizar ondas da Home */
+  .custom-shape-divider-top-1727320708 .shape-fill {
+    fill: #284B63;
+  }
+  
+  /* Estilizar texto da section1 do Sobre Nós */
+  .sobre_nos {
+    margin-left: 40px;
+    margin-top: 60px;
+    color: white;
+  }
+  
+  /* Estilizar parágrafo do Sobre Nós */
+  .sobre_nos p {
+    font-weight: 10;
+  }
+  
+  /* Estilizar div cartões do Sobre Nós */
+  .cartoes {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  /* Estilizar container cartões do Sobre Nós */
+  .container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+  }
+  
+  /* Estilizar o flip quando o mouse passa sobre o cartão do Sobre Nós */
+  .container:hover .flip {
+    transform: rotateY(180deg);
+  }
+  
+  /* Estilizar o flip do Sobre Nós */
+  .flip {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transition: .5s;
+  }
+  
+  /* Estilizar frente e tras dos cartões do Sobre Nós */
+  .frente_1,
+  .frente_2,
+  .frente_3,
+  .frente_4,
+  .tras {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.337);
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Estilizar frente do cartão1 do Sobre Nós */
+  .frente_1 {
+    background-image: url(../img/sensor-technology.jpg);
+    background-size: cover;
+  }
+  
+  /* Estilizar frente do cartão2 do Sobre Nós */
+  .frente_2 {
+    background-image: url(../img/eficiencia.png);
+    background-size: cover;
+  }
+  
+  /* Estilizar frente do cartão3 do Sobre Nós */
+  .frente_3 {
+    background-image: url(../img/energia.jpg);
+    background-size: cover;
+  }
+  
+  /* Estilizar frente do cartão4 do Sobre Nós */
+  .frente_4 {
+    background-image: url(../img/umidadedoar.png);
+    background-size: cover;
+  }
+  
+  /* Estilizar tras dos cartões do Sobre Nós */
+  .tras {
+    background-color: #284b63;
+    border: 1px solid white;
+    box-shadow: 0px 0px 5px white;
+    transform: rotateY(180deg);
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px 30px;
+  }
+  
+  /* Estilizar h4 da frente dos cartões do Sobre Nós */
+  .frente_1,
+  .frente_2,
+  .frente_3,
+  .frente_4 h4 {
+    font-size: 20px;
+    color: #023047;
+  }
+
+  /* Estilizar efeito espelho na frente do cartão no Sobre Nós */
+  .espelho {
+    width: 80%;
+    max-width: 500px;
+    background-color: rgba(255, 255, 255, 0.338);
+    border: 1px solid white;
+    box-shadow: 0px 0px 5px white;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    text-align: center;
+  }
+
+  /* Estilizar parágrafo a tras do cartão */
+  .tras p {
+    font-weight: 100;
+  }
+  
+  /* Estilizar botão enviar do Orçamento */
+  .btn-enviar {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 20px;
+  }
+  
+  /* Estilizar botão enviar do Orçamento */
+  button.botao__1 {
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    background-color: #229EBC;
+    color: white;
+    padding: 0.5em 1em;
+    padding-left: 0.9em;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.2s;
+    cursor: pointer;
+  }
+  
+  /* Span botão enviar do Orçamento */
+  button.botao__1 span {
+    display: block;
+    margin-left: 0.3em;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* SVG do botão enviar do Orçamento */
+  button.botao__1 svg {
+    display: block;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Estilizar efeito quando o mouse passa sobre o botão enviar do Orçamento */
+  button.botao__1:hover .svg-wrapper {
+    animation: fly-1 0.6s ease-in-out infinite alternate;
+  }
+  
+  /* Estilizar efeito quando o mouse passa sobre o botão enviar do Orçamento */
+  button.botao__1:hover svg {
+    transform: translateX(1.2em) rotate(45deg) scale(1.1);
+  }
+  
+  /* Estilizar efeito quando o mouse passa sobre o botão enviar do Orçamento */
+  button.botao__1:hover span {
+    transform: translateX(5em);
+  }
+  
+  /* Estilizar efeito quando o mouse passa sobre o botão enviar do Orçamento */
+  button.botao__1:active {
+    transform: scale(0.95);
+  }
+  
+  /* Estilizar efeito quando o mouse passa sobre o botão enviar do Orçamento */
+  @keyframes fly-1 {
+    from {
+      transform: translateY(0.1em);
+    }
+  
+    to {
+      transform: translateY(-0.1em);
+    }
+  }
+  
+  /* Estilização principal do rodapé */
+  footer {
+    background-color: #023042;
+    color: #fff;
+    margin-top: auto;
+    padding: 4px 0;
+    font-family: "Inter", sans-serif;
+  }
+  
+  /* Contêiner do rodapé */
+  .footerContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+    max-width: 1200px;
+  }
+  
+  /* Estiliza as colunas do rodapé */
+  .colunasFooter{
+    flex: 1;
+    margin: 0 40px;
+  }
+  
+  /* Estiliza o h3 dentro das colunas do rodapé */
+  .colunasFooter h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  /* Estiliza a lista que está dentro do rodapé */
+  .colunasFooter ul { 
+    list-style: none;
+    padding: 0;
+  }
+  
+  /* Estiliza os itens da lista */
+  .colunasFooter ul li {
+    margin-bottom: 8px;
+  }
+  
+  /* Estiliza os links dentro dos itens da lista */
+  .colunasFooter ul li a {
+    color: #ddd;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  /* Estilização ao passar o mouse sobre os links */
+  .colunasFooter ul li a:hover{
+    color: #fff;
+  }
+  
+  /* Estiliza a imagem da logo no rodapé */
+  .logoFooter img {
+    max-width: 140px;
+    height: auto;
+    filter: brightness(0) invert(1); /* Aplica filtro para inverter as cores da imagem */
+  }
+  
+  /* Estiliza os links das redes sociais no rodapé */
+  .redesSociaisFooter a {
+    margin-right: 10px;
+  }
+  
+  /* Estiliza os ícones das redes sociais */
+  .redesSociaisFooter img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  /* Estiliza o botão de contato no rodapé */
+  .botaoContatoFooter {
+    margin-left: 20px;
+  }
+  
+  /* Estiliza o botão de contato */
+  .contatoBotao {
+    background-color: #ffb703;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  /* Estilização ao passar o mouse sobre o botão de contato */
+  .contatobotao :hover {
+    background-color: #d69a02;
+  }
+  
+  /* Estiliza o rodapé final */
+  .footerFinal {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #444;
+  }
+  
+  /* Estiliza o parágrafo no rodapé final */
+  .footerFinal p {
+    font-size: 14px;
+    color: white;
+  
+  }
+
+  /* Estilo do body da página */
+.faq {
+  background-color: #f4f4f9;
+  font-family: "Inter", sans-serif;
+}
+
+/* Estiliza o h1 da página faq */
+.tituloPaginaFaq {
+  text-align: center;
+}
+
+/* Estiliza as sections */
+.faqSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 3px;
+}
+
+/* Estilizar div parágrafo FAQ */
+.paragrafoFaq {
+  text-align: center;
+  padding: 5px;
+}
+
+/* Estilizar div título FAQ */
+.tituloFaq {
+  text-align: center;
+  font-weight: 300;
+}
+
+/* Estilizando o contêiner da FAQ */
+.containerFaq {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  padding: 20px;
+  max-width: 900px;
+}
+
+/* Estiliza as perguntas do faq */
+.containerFaq details {
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+/* Estilo para o cabeçalho de cada pergunta */
+.containerFaq summary {
+  padding: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+/* Adicionando seja para expandir a pergunta  */
+.containerFaq summary::after {
+  content: "▼";
+  font-size: 12px;
+}
+
+/* Muda a seta quando o item estiver aberto */
+.containerFaq details[open] summary::after {
+  content: "▲";
+}
+
+/* Estiliza colocando uma cor quando o item estiver aberto */
+.containerFaq details[open] summary {
+  background-color: #e7e3e3;
+}
+
+/* Estiliza quando passa o mouse por cima */
+.containerFaq summary:hover {
+  background-color: #e7e3e3;
+}
+
+/* Estilo para o texto de resposta da FAQ */
+.containerFaq details p {
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-top: 1px solid #ccc;
+  margin: 0;
+  border-radius: 0 0 5px 5px;
+}
+
+/* Estilizar texto final FAQ */
+.textoFinalFaq {
+  text-align: center;
+  padding: 5px;
+}
+
+/* Responsividade da página */
+@media (max-width: 768px) {
+  body.faq {
+    overflow-x: hidden;
+    /* Impede a rolagem lateral */
+  }
+
+  .faq-container {
+    width: 90%;
+    /* Maior largura para telas pequenas */
+  }
+
+  .paragrafoFaq {
+    font-size: 1em;
+    /* Reduz o tamanho da fonte em telas pequenas */
+    padding: 10px;
+    /* Reduz o padding */
+    line-height: 1.4;
+    /* Ajusta a altura da linha */
+    text-align: justify;
+    /* Justifica o texto para melhor aparência */
+  }
+}
+
+/* Corpo da página contato */
+.Contato{
+  font-family: 'Inter', sans-serif; 
+  background-color: white;
+  color: #333;
+}
+
+/* Titulo da página (h1) */
+.Titulo_contato{
+  text-align: center;
+  padding: 10px;
+}
+
+/* Container que organiza o conteúdo da página de contato */
+.Container_contato{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 20px auto; 
+  max-width: 1200px;
+  padding: 80px;
+}
+
+/* Conteúdo da página de contato */
+.Conteudo_contato{
+  text-align: left;
+  max-width: 600px;
+  padding: 0;
+  margin-right: 20px;
+  line-height: 1.6;
+  flex: 1;
+}
+
+/* Imagens das redes sociais */
+.Img_redesocial_contato{
+  width: 19px;
+}
+
+/* Estiliza o que estiver dentro do section */
+.Contato_section{
+  flex: 1;
+  padding: 0;
+}
+
+/* Estiliza o titulo (h2) do formulário */
+.Titulo_msg_contato{
+  text-align: left;
+  margin-bottom: 0;
+  padding-left: 20px;
+  font-weight: 400;
+}
+
+/* Estiliza o formulário */
+.Forms_contato{
+  background-color: transparent;
+  padding: 11px;
+  border-radius: 8px;
+  max-width: 600px;
+  width: 93%;
+  margin: 0;
+  display: block;
+  padding-left: 20px;
+}
+
+/* Estilo dos inputs dentro do formulário */
+.Contato_input{
+  margin-bottom: 15px;
+}
+
+/* Estilo dos label da página */
+.Label_contato{
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* Estilo para campos de entrada e textarea */
+.Contato_input input[type="text"],
+.Contato_input input[type="email"],
+.Contato_input textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+/* Estilo específico para textarea */
+.Contato_input textarea{
+  resize: none;
+}
+
+/* Estiliza os input e os textarea, muda quando o usuario clica neles */
+.Contato_input input:focus,
+.Contato_input textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Estilo do botão de enviar */
+.Botao_enviar{
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 86px;
+  display: block;
+  margin-left: auto;
+  transition: background-color 0.3s;
+}
+
+.Botao_enviar:hover{
+  background-color: #0056b3;
+}
+
+/* Responsividade apenas para o CONTEUDO da página de Contato */
+@media (max-width: 768px){
+  body.Contato{
+    overflow-x: hidden;}
+}
+
+  
+.orcamento {
+    height: 100vh;
+    width: 98%;
+    bottom: 0;
+    right: 0;
+    background-color: white;
+    padding: 20px 30px;
+}
+  
+.orcamento h2 {
+    font-weight: 400;
+}
+  
+.container-orcamento{
+    border: 1px solid gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100px;
+    padding-left: 20px;
+    border-radius: 10px;
+}
+  
+  .container-qtde{
+    width: 150px;
+  }
+  
+  .nome-email {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+  }
+  
+  #nome_orcamento, #email_orcamento {
+    width: 35%;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    margin-top: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+  }
+  
+  .qtde-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .tamanhos{
+    display: flex;
+    flex-direction: column;
+    padding-top: 2px;
+    gap: 12px;
+  }
+  
+  .seletor-quantidade {
+    border: 0px;
+    padding: 4px;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+  
+  .input-quantidade input {
+    text-align: center;
+    width: 25px;
+    border: 0px;
+  }
+  
+  .input-quantidade button {
+    width: 20px;
+    height: 20px;
+    border: 0px;
+    border-radius: 10px;
+    background-color: white;
+  }
+  
+  .input-quantidade{
+    border: 1px solid rgba(128, 128, 128, 0.667);
+    border-radius: 20px;
+    width: 70px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .orcamento-info-adicionais {
+    margin-bottom: 10px;
+  }
+  
+  #info-adc {
+    width: 500px;
+    height: 100px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    box-sizing: border-box;
+    font-size: 14px;
+  }
+  
+  #info-adc::placeholder {
+    text-align: left;
+    vertical-align: top;
+    position: relative;
+    top: 0;
+  }
+
+  /* Estilizar texto da section1 de Beneficios */
+.beneficios {
+  margin-left: 40px;
+  margin-top: 20px;
+  color: white;
+}
+
+/* Estilizar parágrafo de Beneficios */
+.beneficios p {
+  font-weight: 400; /* Ajustado para um peso de fonte válido */
+}
+
+/* Estilizar div cartões de Beneficios */
+.beneficios_cartao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  position: relative; /* Adicionado para o efeito flip funcionar corretamente */
+}
+
+/* Estilizar o flip quando o mouse passa sobre o cartão de Beneficios */
+.beneficios_cartao:hover .flip {
+  transform: rotateY(180deg);
+}
+
+/* Estilizar o flip de Beneficios */
+.flip {
+  position: relative; /* Alterado para 'relative' para posicionamento correto */
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transition: 0.5s;
+}
+
+/* Estilizar frente e trás dos cartões de Beneficios */
+.frente1,
+.frente2,
+.frente3,
+.tras {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.337);
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Estilizar frente do cartão1 de Beneficios */
+.frente1 {
+  background-color: #284b63;
+  background-size: cover;
+}
+
+/* Estilizar frente do cartão2 de Beneficios */
+.frente2 {
+  background-color: #023047;
+  background-size: cover;
+}
+
+/* Estilizar frente do cartão3 de Beneficios */
+.frente3 {
+  background-color: #023047;
+  background-size: cover;
+}
+
+/* Estilizar trás dos cartões de Beneficios */
+.tras {
+  background-color: #023047;
+  border: 1px solid white;
+  box-shadow: 0px 0px 5px white;
+  transform: rotateY(180deg);
+  text-align: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0px 30px;
+}
+
+/* Estilizar h4 da frente dos cartões de Beneficios */
+.frente1 h4,
+.frente2 h4,
+.frente3 h4 {
+  font-size: 20px;
+  color: #023047;
+}
+
+/* Estilizar efeito espelho na frente do cartão de Beneficios */
+.espelho {
+  width: 80%;
+  max-width: 500px;
+  background-color: rgba(255, 255, 255, 0.338);
+  border: 1px solid white;
+  box-shadow: 0px 0px 5px white;
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+  text-align: center;
+}
+
+/* Estilizar parágrafo atrás do cartão */
+.tras p {
+  font-weight: 100;
+}
+
+.produto{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.beneficios_cartao{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}

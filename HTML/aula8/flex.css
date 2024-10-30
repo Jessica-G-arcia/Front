@@ -1,0 +1,32 @@
+body {
+    margin-left: 10px;
+}
+
+.box {
+    display: flex;
+    width: 100% ;
+    /* flex-direction: row-reverse; */
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.box .camping img {
+    width: 80%;
+    height: auto;
+    border: 1px solid greenyellow;
+}
+
+.box .camping {
+    border: 1px solid red;
+    width: 170px;
+}
+
+.box h3 {
+    border: 1px solid pink;
+    text-align: center;
+}
+
