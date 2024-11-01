@@ -1,0 +1,47 @@
+
+.container {
+  max-width: 960px;
+}
+
+.nav-link:hover {
+  text-shadow: 2px 2px 5px rgba(239, 134, 69, 0.5);
+}
+
+.section1  {
+  background-image: url(../imagens/salada.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  width: 100%;
+  margin-left: 0px !important;
+}
+
+
+.section1_text {
+  background-color: rgba(21, 25, 20, 0.707);
+  border-radius: 20px;
+}
+
+.section1_text {
+  background-color: rgba(21, 25, 20, 0.707);
+  border-radius: 20px;
+}
+
+
+/*
+ * Extra utilities
+ */
+
+.flex-equal > * {
+  -ms-flex: 1;
+  flex: 1;
+}
+@media (min-width: 768px) {
+  .flex-md-equal > * {
+    -ms-flex: 1;
+    flex: 1;
+  }
+}
+
+.overflow-hidden { overflow: hidden; }
