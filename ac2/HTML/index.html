@@ -8,6 +8,21 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Oswald:wght@200..700&display=swap');
     </style>
+    <style>
+        .bd-placeholder-img {
+          font-size: 1.125rem;
+          text-anchor: middle;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          user-select: none;
+        }
+  
+        @media (min-width: 768px) {
+          .bd-placeholder-img-lg {
+            font-size: 3.5rem;
+          }
+        }
+      </style>
     <title>Login</title>
 </head>
 
@@ -15,22 +30,22 @@
     <main class="form-signin">
     <form>
         <img class="mb-4" src="../imagens/logo.png" alt="" width="72" height="57">
-        <h1 class="h3 mb-3 fw-normal lobster-regular">Please sign in</h1>
+        <h1 class="h3 mb-3 fw-normal lobster-regular">Login</h1>
 
         <div class="form-floating">
-            <input type="email" class="form-control" id="floatingInput" placeholder="Digite o seu e-mail">
+            <input type="email" class="form-control" id="floatingInput" placeholder="E-mail">
         </div>
         <div class="form-floating">
-            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+            <input type="password" class="form-control" id="floatingPassword" placeholder="Senha">
         </div>
 
         <div class="checkbox mb-3">
         <label>
-            <input type="checkbox" value="remember-me"> Remember me
+            <input type="checkbox" value="remember-me"> Lembrar de mim
         </label>
         </div>
-        <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
-        <p class="mt-5 mb-3 text-muted">© 2017–2021</p>
+        <button class="w-100 btn btn-lg btn-primary" type="submit"><a class="linkHome" href="../HTML/home.html">Entrar</a></button>
+        <p class="mt-5 mb-3 text-muted">© 2024</p>
     </form>
     </main>
 </body>
