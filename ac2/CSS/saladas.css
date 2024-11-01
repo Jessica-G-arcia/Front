@@ -29,10 +29,6 @@
 }
 
 
-/*
- * Extra utilities
- */
-
 .flex-equal > * {
   -ms-flex: 1;
   flex: 1;
